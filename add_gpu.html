@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Add Manufacturer</title>
+  </head>
+  <body>
+    <a id="home" href="http://flip3.engr.oregonstate.edu:7950/"><button id="home">Home Page</button></a>
+    <form action="">
+      <h3> Add Graphics </h3>
+      <label for="graphicsName">Graphics Name</label></br>
+      <input type="text" id="graphicsName" name="graphicsName"></br>
+
+      <label for="dedicatedMem">Dedicated Memory</label></br>
+      <input type="number" id="dedicatedMem" name="dedicatedMem"></br>
+
+      <label for="">Manufacturer (If the manufacturer is not found please return to the homepage and add the desired manufacturer first)</label></br>
+      <input list="sample_manufacturers" type="datalist" id="graphicsName" name="graphicsName"></br>
+      <datalist id="sample_manufacturers">
+        <option value="Dell">
+        <option value="HP">
+        <option value="Nvidia">
+        <option value="Gigabyte">
+      </datalist> </br>
+      <input type="submit">
+    </form>
+  </body>
+</html>

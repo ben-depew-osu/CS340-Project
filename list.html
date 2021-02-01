@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <a id="home" href="http://flip3.engr.oregonstate.edu:7950/"><button id="home">Home Page</button></a>
+    <h1>Lists Current Entities</h1>
+    <br>
+    <form action="" method="POST" id="update_laptops" onsubmit="return">
+		<label for="">Entity Table to List</label></br>
+		<input list="sample_laptops" type="datalist" id="laptops" name="laptops"></br>
+		<datalist id="sample_laptops">
+			<option value="laptops">
+			<option value="cpus">
+			<option value="gpus">
+			<option value="manufacturers">
+			<option value="laptop cpu pairs">
+			<option value="laptop gpu pairs">
+		</datalist> <br>
+	    <div class="entityEntry">
+			<button onclick="submitForm()">Submit</button>    		
+	</div>
+	</form>
+</div>
+
+</body>
+</html>

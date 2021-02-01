@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <a id="home" href="http://flip3.engr.oregonstate.edu:7950/"><button id="home">Home Page</button></a>
+    <h1>Update Laptops</h1>
+    <form action="" method="POST" id="update_laptops" onsubmit="return">
+	<label for="">Laptops Old Name</label></br>
+	<input list="sample_laptops" type="datalist" id="laptops" name="laptops"></br>
+	<datalist id="sample_laptops">
+		<option value="Inspiron">
+		<option value="ProBook">
+		<option value="XPS">
+		<option value="IdeaPad">
+	</datalist> <br>
+
+	<label for="laptopName">New Laptop Name</label> 		        <br>
+	<input type="text" id="laptopName" name="laptopName" value="">
+    <br>
+
+	<label for="laptopStorage">New Storage</label> 		        <br>
+	<input type="text" id="laptopStorage" name="laptopStorage">
+    <br>
+
+	<label for="laptopPDF">New PDF link</label> 		        <br>
+	<input type="text" id="laptopPDF" name="laptopPDF">
+	<br>
+
+	<label for="">New Manufacturer (If the manufacturer is not found please return to the homepage and add the desired manufacturer first)</label></br>
+	<input list="sample_manufacturers" type="datalist" id="graphicsName" name="graphicsName"></br>
+	<datalist id="sample_manufacturers">
+		<option value="Dell">
+		<option value="HP">
+		<option value="Nvidia">
+		<option value="Gigabyte">
+	</datalist> <br>
+
+    <br>
+    <div class="entityEntry">
+		<button onclick="submitForm()">Submit</button>    		
+	</div>
+</form>
+</div>
+
+</body>
+</html>

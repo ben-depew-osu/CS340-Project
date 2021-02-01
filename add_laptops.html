@@ -1,0 +1,42 @@
+<!DOCTYPE html>	
+	<head>
+		<title>Add a Laptop</title>
+		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript"> 
+		</script>
+	</head>
+
+	<body>
+    <a id="home" href="http://flip3.engr.oregonstate.edu:7950/"><button id="home">Home Page</button></a>
+	<h3 class="direction">Add a laptop:</h3>
+		<div>
+			<form method="GET">
+	        	<label for="laptopName">Laptop Name</label> 		        <br>
+	        	<input type="text" id="laptopName" name="laptopName" value="">
+		        <br>
+
+	        	<label for="laptopStorage">Storage</label> 		        <br>
+	        	<input type="text" id="laptopStorage" name="laptopStorage">
+		        <br>
+
+	        	<label for="laptopPDF">PDF link</label> 		        <br>
+	        	<input type="text" id="laptopPDF" name="laptopPDF">
+	        	<br>
+
+				<label for="">Manufacturer (If the manufacturer is not found please return to the homepage and add the desired manufacturer first)</label></br>
+				<input list="sample_manufacturers" type="datalist" id="graphicsName" name="graphicsName"></br>
+				<datalist id="sample_manufacturers">
+					<option value="Dell">
+					<option value="HP">
+					<option value="Nvidia">
+					<option value="Gigabyte">
+				</datalist> <br>
+
+		        <br>
+		        <div class="entityEntry">
+	        		<button onclick="submitForm()">Submit</button>    		
+	        	</div>
+	        </form>
+		</div>
+	</body>
+</html>

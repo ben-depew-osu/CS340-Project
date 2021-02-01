@@ -1,0 +1,39 @@
+<!DOCTYPE html>	
+	<head>
+		<title>Add a Laptop CPU Pair</title>
+		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript"> 
+		</script>
+	</head>
+
+	<body>
+    <a id="home" href="http://flip3.engr.oregonstate.edu:7950/"><button id="home">Home Page</button></a>
+	<h3 class="direction">Add a laptop cpu pair:</h3>
+		<div>
+			<form method="GET">
+				<label for="">Laptops </label></br>
+				<input list="sample_laptops" type="datalist" id="laptops" name="laptops"></br>
+				<datalist id="sample_laptops">
+					<option value="Inspiron">
+					<option value="ProBook">
+					<option value="XPS">
+					<option value="IdeaPad">
+				</datalist> <br>
+
+				<label for="">CPU </label></br>
+				<input list="sample_cpus" type="datalist" id="cpus" name="cpus"></br>
+				<datalist id="sample_cpus">
+					<option value="Intel i5">
+					<option value="Ryzen 5 3600">
+					<option value="Intel i7">
+					<option value="Intel i9">
+				</datalist> <br>
+
+		        <br>
+		        <div class="entityEntry">
+	        		<button onclick="submitForm()">Submit</button>    		
+	        	</div>
+	        </form>
+		</div>
+	</body>
+</html>
