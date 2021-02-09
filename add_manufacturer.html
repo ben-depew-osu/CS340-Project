@@ -2,10 +2,35 @@
 <html>
   <head>
     <meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
     <title>Add Manufacturer</title>
   </head>
   <body>
-    <a id="home" href="http://web.engr.oregonstate.edu/~depewb"><button id="home">Home Page</button></a>
+    <div class="navBar">
+		<ul>
+			<li><div class="nav"><a href="./">Home</a></div></li>
+			<li><div class="nav navBar"><a href="#">Add:</a></div>
+				<div class="submenu">
+					<a href="./add_laptop.html">Laptop</a>
+					<a href="./add_manufacturer.html">Manufacturer</a>
+					<a href="./add_cpu.html">CPU</a>
+					<a href="./add_gpu.html">GPU</a>
+					<a href="./add_laptop_cpu.html">Laptop/CPU pair</a>
+					<a href="./add_laptop_gpu.html">Laptop/GPU pair</a>
+				</div>
+			</li>
+			<li><div class="nav"><a href="./update_laptop.html">Update Laptop</a></div></li>
+			<li><div class="nav"><a href="./delete_laptop.html">Delete Laptop</a></div></li>
+			<li><div class="nav"><a href="#">Search</a></div>
+				<div class="submenu">
+					<a href="./search_laptops_cpu.html">Search Laptop by CPU</a>
+					<a href="./search_laptops_gpu.html">Search Laptop by GPU</a>
+				</div>
+			</li>
+			<li><div class="nav"><a href="./list.html">List Individual Entities</a></div></li>
+			<li><div class="nav"><a href="#">About</a></div></li>
+		</ul>
+	</div>
     <form action="">
       <h3> Add Manufacturer </h3>
       <label for="manufacturerName">Manufacturer Name</label></br>

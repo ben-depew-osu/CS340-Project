@@ -1,32 +1,9 @@
 <!DOCTYPE html>	
 	<head>
-		<title>Delete Laptop</title>
+		<title>Add Pair (laptop/CPU)</title>
 		<link rel="stylesheet" href="main.css">
-		<script type="text/javascript"> 
-			/* start of some validation code
-			function submitForm(string) {
-				var success = checkEmpty(string);
-				if (success == 0) {
-					document.getElementById("finalSubmit").submit();
-				}
-			}
-
-			function checkEmpty() {
-				if(string == '') {
-					alert('One or more fields is missing information, please enter all info before submitting');
-
-					return 1;
-				}
-				else {
-					return 0;
-				}
-			}
-
-			function checkValue(){
-				alert(document.getElementById("laptopName").value);
-			}
-
-			document.getElementById("checkVal").addEventListener("click", checkValue); */
+		<script type="text/javascript">
+			// grab information from database
 		</script>
 	</head>
 
@@ -57,20 +34,30 @@
 			</ul>
 		</div>
 		<div class="direction">
-			<h3 class="direction">Delete laptop:</h3>
+			<h3 class="direction">Select a pair to associate:</h3>
 		</div>
 		<div>
-			<form method="POST">
-				<div class="entityEntry">
-		        	<label for="LaptopToDelete">Enter name of laptop to delete:</label>
-		        	<input type="text" id="laptopName" name="laptopName">
-		        </div>
-		     
-		        <div class="entityEntry">
-	        		<button onclick="submitForm()">Submit</button>    		
-	        	</div>
-	        </form>
-	        <!--<button id="checkVal">checkValue</button>-->
+			<form action="#">
+			  	<label for="LaptopList">Laptops:</label>
+			  	<select name="Laptop" id="Laptop">
+			    	<option value="Laptop1">Laptop1</option>
+			    	<option value="Laptop2">Laptop2</option>
+			    	<option value="Laptop3">Laptop3</option>
+			    	<option value="Laptop4">Laptop4</option>
+			  	</select>
+			  	<br><br>
+			  	<label for="CPUList">CPUs:</label>
+			  	<select name="CPU" id="CPU">
+			    	<option value="CPU1">CPU1</option>
+			    	<option value="CPU2">CPU2</option>
+			    	<option value="CPU3">CPU3</option>
+			    	<option value="CPU$">CPU4</option>
+			  	</select>
+			  	<br><br>
+			  	<input type="submit" value="Submit">
+			</form>
 		</div>
+		<br>
+
 	</body>
 </html>

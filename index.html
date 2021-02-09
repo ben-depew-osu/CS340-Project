@@ -4,35 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
     <title>Laptop Repair Manual Home</title>
 </head>
 <body>
-    <h1>Laptop Repair Manual Database</h1>
-    <h3>Add</h3>
-    <ul>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/add_laptops.html">Add a new laptop</a></li>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/add_manufacturer.html">Add a new manufacturer</a></li>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/add_cpu.html">Add a new CPU</a></li>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/add_gpu.html">Add a new GPU</a></li>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/add_laptop_cpu.html">Add a new Laptop CPU Pair</a></li>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/add_laptop_gpu.html">Add a new Laptop GPU Pair</a></li>
-    </ul>
-    <h3>Update</h3>
-    <ul>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/update_laptop.html">Update Laptops</a></li>
-    </ul>
-    <h3>Delete</h3>
-    <ul>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/delete_laptop.html">Delete Laptops</a></li>
-    </ul>
-    <h3>Search</h3>
-    <Ul>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/search_laptops_cpu.html">Search for Laptops by CPU </a></li>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/search_laptops_gpu.html">Search for Laptops by GPU </a></li>
-    </Ul>
-    <h3>List</h3>
-    <ul>
-        <li><a href="http://web.engr.oregonstate.edu/~depewb/list.html">List Entities </a></li>
-    </ul>
+    <div class="navBar">
+		<ul>
+			<li><div class="nav"><a href="./">Home</a></div></li>
+			<li><div class="nav navBar"><a href="#">Add:</a></div>
+				<div class="submenu">
+					<a href="./add_laptop.html">Laptop</a>
+					<a href="./add_manufacturer.html">Manufacturer</a>
+					<a href="./add_cpu.html">CPU</a>
+					<a href="./add_gpu.html">Laptop/CPU pair</a>
+					<a href="./add_laptop_cpu.html">Laptop/CPU pair</a>
+					<a href="./add_laptop_gpu.html">Laptop/GPU pair</a>
+				</div>
+			</li>
+			<li><div class="nav"><a href="./update_laptop.html">Update Laptop</a></div></li>
+			<li><div class="nav"><a href="./delete_laptop.html">Delete Laptop</a></div></li>
+			<li><div class="nav"><a href="#">Search</a></div>
+				<div class="submenu">
+					<a href="./search_laptops_cpu.html">Search Laptop by CPU</a>
+					<a href="./search_laptops_gpu.html">Search Laptop by GPU</a>
+				</div>
+			</li>
+			<li><div class="nav"><a href="./list.html">List Individual Entities</a></div></li>
+			<li><div class="nav"><a href="#">About</a></div></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<h3>Welcome to the Laptop Repair Manual Index! Feel free to browse, add to, or delete from our database.</h3>
 </body>
 </html>

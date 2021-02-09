@@ -1,6 +1,6 @@
 <!DOCTYPE html>	
 	<head>
-		<title>Update Laptop</title>
+		<title>Add a Laptop</title>
 		<link rel="stylesheet" href="main.css">
 		<script type="text/javascript"> 
 			/* start of some validation code
@@ -56,22 +56,16 @@
 				<li><div class="nav"><a href="#">About</a></div></li>
 			</ul>
 		</div>
-		<div class="direction">
-			<h3 class="direction">Select a laptop to update its info:</h3>
+		<div class="title">
+			<h3>Enter the Name and RAM, and confirm the Manufacturer, CPU and Graphics of the laptop:</h3>
+			<h5>
+				(Note: if the manufacturer, CPU, or Graphics are not found, please add the desired row first)
+			</h5>
+			
 		</div>
 		<div>
 			<form method="GET">
 				<div class="entityEntry">
-		        	<label for="laptopName">Select laptop to edit:</label>
-		        	<select name="Laptop" id="Laptop">
-				    	<option value="Laptop1">Laptop1</option>
-				    	<option value="Laptop2">Laptop2</option>
-				    	<option value="Laptop3">Laptop3</option>
-				    	<option value="Laptop4">Laptop4</option>
-			  		</select>
-		        </div>
-		        <br>
-		        <div class="entityEntry">
 		        	<label for="laptopName">Name</label>
 		        	<input type="text" id="laptopName" name="laptopName">
 		        </div>
@@ -83,17 +77,32 @@
 		        <br>
 		        <div class="entityEntry">
 		        	<label for="laptopCPU">CPU</label>
-		        	<input type="text" id="laptopCPU" name="laptopCPU">
+		        	<select name="CPU" id="CPU">
+						<option value="CPU1">CPU1</option>
+						<option value="CPU2">CPU2</option>
+						<option value="CPU3">CPU3</option>
+						<option value="CPU$">CPU4</option>
+					</select>
 		        </div>
 		        <br>
 		        <div class="entityEntry">
 		        	<label for="laptopGraphics">Graphics</label>
-		        	<input type="text" id="laptopGraphics" name="laptopGraphics">
+		        	<select name="GPU" id="GPU">
+						<option value="GPU1">GPU1</option>
+						<option value="GPU2">GPU2</option>
+						<option value="GPU3">GPU3</option>
+						<option value="GPU$">GPU4</option>
+					</select>
 		        </div>
 		        <br>
 		        <div class="entityEntry">
 		        	<label for="laptopStorage">Storage</label>
 		        	<input type="text" id="laptopStorage" name="laptopStorage">
+		        </div>
+				<br>
+		        <div class="entityEntry">
+		        	<label for="laptopRam">RAM</label>
+		        	<input type="text" id="laptopRam" name="laptopStorage">
 		        </div>
 		        <br>
 		        <div class="entityEntry">
