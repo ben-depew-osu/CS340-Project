@@ -1,0 +1,65 @@
+<html>
+<div class="navBar">
+			<ul>
+				<li><div class="nav"><a href="./">Home</a></div></li>
+				<li><div class="nav navBar"><a href="#">Add:</a></div>
+					<div class="submenu">
+						<a href="./add_laptop.html">Laptop</a>
+						<a href="./add_manufacturer.html">Manufacturer</a>
+						<a href="./add_cpu.html">CPU</a>
+						<a href="./add_gpu.html">GPU</a>
+						<a href="./add_laptop_cpu.html">Laptop/CPU pair</a>
+						<a href="./add_laptop_gpu.html">Laptop/GPU pair</a>
+					</div>
+				</li>
+				<li><div class="nav"><a href="./update_laptop.html">Update Laptop</a></div></li>
+				<li><div class="nav"><a href="./delete_laptop.html">Delete Laptop</a></div></li>
+				<li><div class="nav"><a href="#">Search</a></div>
+					<div class="submenu">
+						<a href="./search_laptops_cpu.html">Search Laptop by CPU</a>
+						<a href="./search_laptops_gpu.html">Search Laptop by GPU</a>
+					</div>
+				</li>
+				<li><div class="nav"><a href="./list.html">List Individual Entities</a></div></li>
+				<li><div class="nav"><a href="#">About</a></div></li>
+			</ul>
+		</div>
+		
+    <a id="home" href="http://web.engr.oregonstate.edu/~depewb"><button id="home">Home Page</button></a>
+    <h1>Lists Current Entities</h1>
+    <br>
+<form id="listEntity" action="/list" method="get">
+    <form action="" method="POST" id="update_laptops" onsubmit="return">
+		<label for="">Entity Table to List</label></br>
+		<input list="sample_laptops" type="datalist" id="entities" name="entities"></br>
+		<datalist id="sample_laptops">
+			<option value="laptops">
+			<option value="cpus">
+			<option value="gpus">
+			<option value="manufacturers">
+			<option value="laptop cpu pairs">
+			<option value="laptop gpu pairs">
+		</datalist> <br>
+	    <div class="entityEntry">
+			<button onclick="listEntities()">Submit</button>    		
+	</div>
+	</form>
+ </form>
+<br/>
+
+<h3>{{entityName}}:</h3>
+<table>
+    <thead> 
+        <th>{{column1name}}</th> 
+        <th>{{column2name}}</th>  
+    </thead> 
+    <tbody>
+        {{#each entity}} 
+        <tr> 
+            <td>{{name1}}</td> 
+            <td>{{name2}}</td> 
+        </tr> 
+        {{/each}} 
+    </tbody> 
+</table> 
+</html>
