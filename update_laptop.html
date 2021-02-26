@@ -1,112 +1,48 @@
-<!DOCTYPE html>	
-	<head>
-		<title>Update Laptop</title>
-		<link rel="stylesheet" href="main.css">
-		<script type="text/javascript"> 
-			/* start of some validation code
-			function submitForm(string) {
-				var success = checkEmpty(string);
-				if (success == 0) {
-					document.getElementById("finalSubmit").submit();
-				}
-			}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <a id="home" href="http://web.engr.oregonstate.edu/~depewb"><button id="home">Home Page</button></a>
+    <h1>Update Laptops</h1>
+    <form action="" method="POST" id="update_laptops" onsubmit="return">
+	<label for="">Laptops Old Name</label></br>
+	<input list="sample_laptops" type="datalist" id="laptops" name="laptops"></br>
+	<datalist id="sample_laptops">
+		<option value="Inspiron">
+		<option value="ProBook">
+		<option value="XPS">
+		<option value="IdeaPad">
+	</datalist> <br>
 
-			function checkEmpty() {
-				if(string == '') {
-					alert('One or more fields is missing information, please enter all info before submitting');
+	<label for="laptopName">New Laptop Name</label> 		        <br>
+	<input type="text" id="laptopName" name="laptopName" value="">
+    <br>
 
-					return 1;
-				}
-				else {
-					return 0;
-				}
-			}
+	<label for="laptopStorage">New Storage</label> 		        <br>
+	<input type="text" id="laptopStorage" name="laptopStorage">
+    <br>
 
-			function checkValue(){
-				alert(document.getElementById("laptopName").value);
-			}
+	<label for="laptopPDF">New PDF link</label> 		        <br>
+	<input type="text" id="laptopPDF" name="laptopPDF">
+	<br>
 
-			document.getElementById("checkVal").addEventListener("click", checkValue); */
-		</script>
-	</head>
+	<label for="">New Manufacturer (If the manufacturer is not found please return to the homepage and add the desired manufacturer first)</label></br>
+	<input list="sample_manufacturers" type="datalist" id="graphicsName" name="graphicsName"></br>
+	<datalist id="sample_manufacturers">
+		<option value="Dell">
+		<option value="HP">
+		<option value="Nvidia">
+		<option value="Gigabyte">
+	</datalist> <br>
 
-	<body>
-		<div class="navBar">
-			<ul>
-				<li><div class="nav"><a href="./">Home</a></div></li>
-				<li><div class="nav navBar"><a href="#">Add:</a></div>
-					<div class="submenu">
-						<a href="./add_laptop.html">Laptop</a>
-						<a href="./add_manufacturer.html">Manufacturer</a>
-						<a href="./add_cpu.html">CPU</a>
-						<a href="./add_gpu.html">GPU</a>
-						<a href="./add_laptop_cpu.html">Laptop/CPU pair</a>
-						<a href="./add_laptop_gpu.html">Laptop/GPU pair</a>
-					</div>
-				</li>
-				<li><div class="nav"><a href="./update_laptop.html">Update Laptop</a></div></li>
-				<li><div class="nav"><a href="./delete_laptop.html">Delete Laptop</a></div></li>
-				<li><div class="nav"><a href="#">Search</a></div>
-					<div class="submenu">
-						<a href="./search_laptops_cpu.html">Search Laptop by CPU</a>
-						<a href="./search_laptops_gpu.html">Search Laptop by GPU</a>
-					</div>
-				</li>
-				<li><div class="nav"><a href="./list.html">List Individual Entities</a></div></li>
-				<li><div class="nav"><a href="#">About</a></div></li>
-			</ul>
-		</div>
-		<div class="direction">
-			<h3 class="direction">Select a laptop to update its info:</h3>
-		</div>
-		<div>
-			<form method="GET">
-				<div class="entityEntry">
-		        	<label for="laptopName">Select laptop to edit:</label>
-		        	<select name="Laptop" id="Laptop">
-				    	<option value="Laptop1">Laptop1</option>
-				    	<option value="Laptop2">Laptop2</option>
-				    	<option value="Laptop3">Laptop3</option>
-				    	<option value="Laptop4">Laptop4</option>
-			  		</select>
-		        </div>
-		        <br>
-		        <div class="entityEntry">
-		        	<label for="laptopName">Name</label>
-		        	<input type="text" id="laptopName" name="laptopName">
-		        </div>
-		        <br>
-		        <div class="entityEntry">
-		        	<label for="laptopRAM">Manufacturer</label>
-		        	<input type="text" id="laptopManu" name="laptopName">
-		        </div>
-		        <br>
-		        <div class="entityEntry">
-		        	<label for="laptopCPU">CPU</label>
-		        	<input type="text" id="laptopCPU" name="laptopCPU">
-		        </div>
-		        <br>
-		        <div class="entityEntry">
-		        	<label for="laptopGraphics">Graphics</label>
-		        	<input type="text" id="laptopGraphics" name="laptopGraphics">
-		        </div>
-		        <br>
-		        <div class="entityEntry">
-		        	<label for="laptopStorage">Storage</label>
-		        	<input type="text" id="laptopStorage" name="laptopStorage">
-		        </div>
-		        <br>
-		        <div class="entityEntry">
-		        	<label for="laptopPDF">PDF link</label>
-		        	<input type="text" id="laptopPDF" name="laptopPDF">
-		    	</div>
-		        
-		        <br>
-		        <div class="entityEntry">
-	        		<button onclick="submitForm()">Submit</button>    		
-	        	</div>
-	        </form>
-	        <!--<button id="checkVal">checkValue</button>-->
-		</div>
-	</body>
+    <br>
+    <div class="entityEntry">
+		<button onclick="submitForm()">Submit</button>    		
+	</div>
+</form>
+</div>
+
+</body>
 </html>

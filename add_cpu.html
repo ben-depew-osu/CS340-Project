@@ -2,35 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-	<link rel="stylesheet" href="main.css">
     <title>Add CPU</title>
   </head>
   <body>
-    <div class="navBar">
-		<ul>
-			<li><div class="nav"><a href="./">Home</a></div></li>
-			<li><div class="nav navBar"><a href="#">Add:</a></div>
-				<div class="submenu">
-					<a href="./add_laptop.html">Laptop</a>
-					<a href="./add_manufacturer.html">Manufacturer</a>
-					<a href="./add_cpu.html">CPU</a>
-					<a href="./add_gpu.html">GPU</a>
-					<a href="./add_laptop_cpu.html">Laptop/CPU pair</a>
-					<a href="./add_laptop_gpu.html">Laptop/GPU pair</a>
-				</div>
-			</li>
-			<li><div class="nav"><a href="./update_laptop.html">Update Laptop</a></div></li>
-			<li><div class="nav"><a href="./delete_laptop.html">Delete Laptop</a></div></li>
-			<li><div class="nav"><a href="#">Search</a></div>
-				<div class="submenu">
-					<a href="./search_laptops_cpu.html">Search Laptop by CPU</a>
-					<a href="./search_laptops_gpu.html">Search Laptop by GPU</a>
-				</div>
-			</li>
-			<li><div class="nav"><a href="./list.html">List Individual Entities</a></div></li>
-			<li><div class="nav"><a href="#">About</a></div></li>
-		</ul>
-	</div>
+    <a id="home" href="http://web.engr.oregonstate.edu/~depewb"><button id="home">Home Page</button></a>
     <form action="">
       <h3> Add CPU </h3>
       <label for="cpuName">CPU Name</label></br>
@@ -40,7 +15,7 @@
       <input type="number" id="clockSpeed" name="clockSpeed"></br>
 
       <label for="">Manufacturer (If the manufacturer is not found please return to the homepage and add the desired manufacturer first)</label></br>
-      <input list="sample_manufacturers" type="datalist" id="manufacturerID" name="manuName"></br>
+      <input list="sample_manufacturers" type="datalist" id="graphicsName" name="graphicsName"></br>
       <datalist id="sample_manufacturers">
         <option value="Dell">
         <option value="HP">

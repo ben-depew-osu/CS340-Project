@@ -1,42 +1,29 @@
+<!DOCTYPE html>	
+	<head>
+		<title>Find laptop via Graphics</title>
+		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript">
+			// grab information from database
+		</script>
+	</head>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-	<link rel="stylesheet" href="main.css">
-</head>
-<body>
-    <div class="navBar">
-		<ul>
-			<li><div class="nav"><a href="./">Home</a></div></li>
-			<li><div class="nav navBar"><a href="#">Add:</a></div>
-				<div class="submenu">
-					<a href="./add_laptop.html">Laptop</a>
-					<a href="./add_manufacturer.html">Manufacturer</a>
-					<a href="./add_cpu.html">CPU</a>
-					<a href="./add_gpu.html">GPU</a>
-					<a href="./add_laptop_cpu.html">Laptop/CPU pair</a>
-					<a href="./add_laptop_gpu.html">Laptop/GPU pair</a>
-				</div>
-			</li>
-			<li><div class="nav"><a href="./update_laptop.html">Update Laptop</a></div></li>
-			<li><div class="nav"><a href="./delete_laptop.html">Delete Laptop</a></div></li>
-			<li><div class="nav"><a href="#">Search</a></div>
-				<div class="submenu">
-					<a href="./search_laptops_cpu.html">Search Laptop by CPU</a>
-					<a href="./search_laptops_gpu.html">Search Laptop by GPU</a>
-				</div>
-			</li>
-			<li><div class="nav"><a href="./list.html">List Individual Entities</a></div></li>
-			<li><div class="nav"><a href="#">About</a></div></li>
-		</ul>
-	</div>
-    <h1>Search for laptops by GPU</h1>
-    <form action="" method="GET" id="gpu_search" onsubmit="return">
-        <label>GPU Name: </label>
-        <input type="text" name="gpuName">
-        <input type="submit" value="Search">
-    </form>
-    <h2>Search results:</h2>
-</body>
+	<body>
+    <a id="home" href="http://web.engr.oregonstate.edu/~depewb"><button id="home">Home Page</button></a>
+		<div class="direction">
+			<h3 class="direction">Select a Graphics type to list all laptops that can use that Graphics:</h3>
+		</div>
+		<div>
+			<form action="#">
+			  	<label for="GraphicsList">Available Graphics:</label>
+			  	<select name="Graphics" id="Graphics">
+			    	<option value="Graphics1">Graphics1</option>
+			    	<option value="Graphics2">Graphics2</option>
+			    	<option value="Graphics3">Graphics3</option>
+			    	<option value="Graphics4">Graphics4</option>
+			  	</select>
+			  	<br><br>
+			  	<input type="submit" value="Submit">
+			</form>
+		</div>
+	</body>
 </html>
